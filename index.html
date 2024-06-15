@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Influence Hub</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section id="banner" class="banner">
+      <video autoplay muted loop id="banner-video">
+        <source src="banner.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <header>
+          <h1>Influence Hub</h1>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#contact-form">Create With Us</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </nav>
+        </header>
+        <a href="#contact-form" class="scroll-down">
+          &#x25BC;
+        </a>
+      </div>
+    </section>
+
+    <!-- Text Block with White Background -->
+    <section class="white-background">
+      <div class="text-block">
+        <h2>We manage and elevate the world's most influential creators and celebrities.</h2>
+        <h3>Broadening Your Influence</h3>
+        <p>Obtain Unmatchable Growth with Our Cutting-Edge Strategies</p>
+        <button onclick="scrollToContactForm()">Let's Get Creating!</button>
+      </div>
+    </section>
+
+    <!-- Text Block with Gradient Background -->
+    <section class="gradient-background">
+      <div class="text-block">
+        <h2>The Never Ending Benefits of Working with Influence Hub.</h2>
+        <h3>Join Our Team of Creators!</h3>
+        <button onclick="scrollToContactForm()">Let's Get Started</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Meet Our Creators</h2>
+      <div class="creator-profiles">
+        <div class="creator-profile">
+          <img src="andrea.jpg" alt="Andrea">
+          <h4>Andrea</h4>
+        </div>
+        <div class="creator-profile">
+          <img src="alice.jpg" alt="Alice">
+          <h4>Alice</h4>
+        </div>
+        <div class="creator-profile">
+          <img src="kebs.jpg" alt="Kebs">
+          <h4>Kebs</h4>
+        </div>
+        <div class="creator-profile">
+          <img src="olly.jpg" alt="Olly">
+          <h4>Olly</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form" id="contact-form">
+      <video autoplay muted loop id="form-video">
+        <source src="form.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="form-content">
+        <h2>Are You a Creator Looking to Work With Influence Hub?</h2>
+        <h3>Contact us</h3>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <label for="first-name">First Name (required)</label>
+          <input type="text" id="first-name" name="first-name" required>
+
+          <label for="last-name">Last Name (required)</label>
+          <input type="text" id="last-name" name="last-name" required>
+
+          <label for="email">Email (required)</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone (required)</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function scrollToContactForm() {
+      document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
